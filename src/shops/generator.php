@@ -187,7 +187,7 @@ else
 	print('<img src="thatfuckingcat.jpg" alt="That Fucking Cat!"/><br />');
 	echo 'Successfully generated shop config for LocalShops V3+.<br />';
 	echo 'Visit shops/' . $v4uuid . '.shop to download the file!<br />';
-	echo 'The UUID of your shop is:<b> ' . $v4uuid . '</b>!<br />';
+	echo 'The UUID of your shop is:<b><br /> ' . $v4uuid . '</b><br />';
 	//end of script 2
 	fclose($out);
 }
@@ -203,9 +203,10 @@ if (isset($_POST['content']))
     fclose($fp) or die ("Error closing file!");
 }
 ?>
-
+<h3>You can edit your shop file here in case you made mistakes, don't worry, it is easy!</h3><br />
 <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="post">
-    <textarea rows="30" cols="80" name="content"><?php readfile($fn); ?></textarea><br /> 
+    <textarea rows="30" cols="80" name="content"><?php readfile($fn); ?></textarea><br />
+    <input type="submit" value="Save File" name="submit" />
 </form>
 <h3>Click <a href="TO_ADDITEM.PHP">here</a> to add items to your shop! (remember the UUID above)!</h3><br />
 <h3>Click <a href="TO_MAIN">here</a> to go to the main page!</h3><br />

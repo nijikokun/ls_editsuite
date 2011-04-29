@@ -1,3 +1,6 @@
+Current recommended release: release_1.zip
+Get it from Downloads! I don't recommend using the /src, it might be broken VERY OFTEN.
+
 LOCALSHOPS - SHOP EDITING SUITE
 --------------------------------
 LocalShops - Shop Editing Suite is a PHP program made to make using LocalShops a lot easier. The program's main goal is to help new users make shops and add items to them. The editing suite currently supports version 3.x.x of the plugin, and will be updated every time the file format changes, even a small bit.
@@ -14,3 +17,13 @@ Edit shop's settings after generating
 Advanced shop editing
 Item aliases
 Shop name input instead of UUID input on adding items
+
+INSTALLATION GUIDE
+-------------------
+1. Download /src or a recommended release from Downloads
+2. Edit shops/generator.php and shops/generator2.php with the URLs to the index.php and additem.php! (optional, if you don't want working links)
+3. Upload the files to your webspace.
+4. Go to the index of the program.
+5. Have fun!
+
+6. Suggest features and report bugs!

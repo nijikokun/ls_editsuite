@@ -10,6 +10,10 @@
 <h3>Edit uploaded/generated shops' settings or add new items to the shop<br /><br />
 <h2><a href=upload.php>Upload a shop</a></h2><br />
 <h3>Upload existing shops from your server to the generator<br /><br />
+<h2>Edit a shop file</h2><br />
+<form method="post" action="shops/editor.php">
+<label for="edit">Shop UUID:</label> <br /><input type="text" name="edit" id="edit"><br />
+<input type="Submit" value="Edit Shop"></form><br /><br />
 <h4>LocalShops Shop Suite (c) iffa 2011 - LocalShops made by Mineral, cereal and Jonbas</h4></center>
 </body>
 </html>

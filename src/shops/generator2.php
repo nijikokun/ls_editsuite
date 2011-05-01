@@ -23,8 +23,6 @@ if (file_exists($_POST[shop] . '.shop'))
 	}
     fputs($out, "\n");
     fputs($out, $_POST[item]);
-    fputs($out, '\:');
-    fputs($out, $_POST[dataval]);
     fputs($out, '=');
     fputs($out, $_POST[buyprice]);
     fputs($out, '\:');

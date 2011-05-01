@@ -48,7 +48,7 @@ exit;
     $new_contents = str_replace('name=' . $_POST[oldname], 'name=' . $_POST[newname], $contents);
     file_put_contents($file, $new_contents, FILE_TEXT);
 	//end of edit
-    print('<img src="thatfuckingcat.jpg" alt="That Fucking Cat!"/><br />');
+    print('<img src="thatfuckingcat.png" alt="That Fucking Cat!"/><br />');
 	echo 'Successfully edited shop settings for LocalShops V3+.<br />';
 	echo 'Visit shops/<b>' . $_POST[shop] . '.shop</b> to download the file!<br />';
     echo 'The UUID of your shop is:<br /><b> ' . $_POST[shop] . '</b>!<br />';

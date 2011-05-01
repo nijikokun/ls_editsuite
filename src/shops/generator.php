@@ -184,7 +184,7 @@ else
 	fputs($out, "#ITEM ADDING TEMPLATE, STRAIGHT FROM DEVELOPERS:\n");
     fputs($out, '#ItemID\:SubType=BuyPrice\:BundleSize,SellPrice\:BundleSize,Stock\:MaxStock');
 	//end of write-to-file script
-	print('<img src="thatfuckingcat.jpg" alt="That Fucking Cat!"/><br />');
+	print('<img src="thatfuckingcat.png" alt="That Fucking Cat!"/><br />');
 	echo 'Successfully generated shop config for LocalShops V3+.<br />';
 	echo 'Visit shops/' . $v4uuid . '.shop to download the file!<br />';
 	echo 'The UUID of your shop is:<b><br /> ' . $v4uuid . '</b><br />';

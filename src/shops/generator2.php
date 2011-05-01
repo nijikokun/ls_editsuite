@@ -35,7 +35,7 @@ if (file_exists($_POST[shop] . '.shop'))
     fputs($out, $_POST[stock]);
     fputs($out, '\:0');
 	//end of write-to-file script
-	print('<img src="thatfuckingcat.jpg" alt="That Fucking Cat!"/><br />');
+	print('<img src="thatfuckingcat.png" alt="That Fucking Cat!"/><br />');
 	echo 'Successfully added a new item for LocalShops V3+.<br />';
 	echo 'Visit shops/' . $_POST[shop] . '.shop to download the file!<br />';
     echo 'The UUID of your shop is: ' . $shop . '!<br />';

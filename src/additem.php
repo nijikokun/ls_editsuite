@@ -246,12 +246,11 @@
 <option value="357\:0">Cookie</option>
 <option value="2256\:0">Gold Music Disc</option>
 <option value="2257\:0">Green Music Disc</option>
-</select><br />
-<label for="dataval">Data value (subtype):</label> <br /><input type="text" name="dataval" id="dataval"><br /><br />
+</select><br /><br /><br />
 <label for="buyprice">Buy Price:<br /><input type="text" name="buyprice" id="buyprice"><br />
-<label for="bundlebuy">Bundle Size:<br /><input type="text" name="bundlebuy" id="bundlebuy"><br /><br />
+<label for="bundlebuy">Bundle Size:<br /><input type="text" name="bundlebuy" id="bundlebuy"><br /><br /><br />
 <label for="sellprice">Sell Price:<br /><input type="text" name="sellprice" id="sellprice"><br />
-<label for="bundlesell">Bundle Size:<br /><input type="text" name="bundlesell" id="bundlesell"><br /><br />
+<label for="bundlesell">Bundle Size:<br /><input type="text" name="bundlesell" id="bundlesell"><br /><br /><br />
 <label for="stock">Stock: <br /><input type="text" name="stock" id="stock"><br />
 <input type="Submit" value="Add Item"></form><br /><br />
 <h4>LocalShops Shop Suite (c) iffa 2011 - LocalShops made by Mineral, cereal and Jonbas</h4></center>

@@ -6,6 +6,7 @@
 <center><h2>WeBringYouGaming - LocalShops Item Generator</h2>
 <!-- Unused configuration code by iffa --!>
 <?php
+require_once 'magicquotes.php';
 // LocalShops Generator - Settings
 // Location of index.php, without http:// or index.php
 $mainsite = 'google.com'

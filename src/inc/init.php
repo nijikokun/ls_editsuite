@@ -22,7 +22,7 @@ $FileManager = new File();
 $items = new Items('inc/items.db');
 
 // Version
-$config['version'] = "0.1";
+$config['version'] = "0.1.1";
 
 // Strip those magic quotes
 if (get_magic_quotes_gpc()){

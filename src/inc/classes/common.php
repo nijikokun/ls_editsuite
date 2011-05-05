@@ -61,7 +61,7 @@ class Common {
     function name2UUID($name){
         global $config;
         
-        if (substr_count($name,'-') == 4 && strlen($name) == 32){
+        if (substr_count($name,'-') == 4 && strlen($name) == 36){
             return $name;
         }
         

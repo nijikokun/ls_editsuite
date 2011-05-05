@@ -1,0 +1,52 @@
+
+
+/* Page */
+body {
+  background: #fff;
+  color: #000;
+}
+
+/* Header */
+#header {
+    float: left;
+    margin-bottom: 20px;
+}
+
+#header nav, #header nav ul, #header nav ul li {
+    float: left;
+}
+
+#header nav ul {
+    list-style: none;
+}
+
+#header nav ul li {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+#header nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+#header nav ul li a:hover {
+    color: #0000F1;
+    text-decoration: underline;
+}
+
+/* Content */
+#content { clear: both; }
+
+/* Errors */
+label.error {
+  background: #ffc;
+  color: #c00;
+  font-style: italic;
+}
+
+input.error,
+select.error,
+textarea.error {
+  background-color: #fee;
+}

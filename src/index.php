@@ -1,21 +1,63 @@
-<html>
-<head>
-<title>WeBringYouGaming - LocalShops Shop Suite</title>
-</head>
-<body>
-<center><h2>WeBringYouGaming - LocalShops Shop Suite</h2><br /><br />
-<h2><a href=generate.php>Make a new shop</a></h2><br />
-<h3>Generate a new shop with the settings you give<br /><br />
-<h2><a href=additem.php>Add Items</a></h2><br />
-<h3>Add new items to the shop<br /><br />
-<h2><a href=editsettings.php>Edit Shop</a></h2><br />
-<h3>Edit shop settings easily<br /><br />
-<h2><a href=upload.php>Upload a shop</a></h2><br />
-<h3>Upload existing shops from your server to the generator<br /><br />
-<h2>Edit a shop file</h2><br />
-<form method="post" action="shops/editor.php">
-<label for="edit">Shop UUID:</label> <br /><input type="text" name="edit" id="edit"><br />
-<input type="Submit" value="Edit Shop"></form><br /><br />
-<h4>LocalShops Shop Suite (c) iffa 2011 - LocalShops made by Mineral, cereal and Jonbas</h4></center>
-</body>
-</html>
+<?php
+/*
+ * LocalSuite
+ * 
+ * @author: Nijikokun <nijikokun@gmail.com>
+ * @author: iffa
+ * @copyright: Copyright (C) 2011
+ * @license: GNUv3 Affero License <http://www.gnu.org/licenses/agpl-3.0.html>
+ */
+
+include('inc/init.php');
+include($config['template_path'] . $config['template'] . "/header.php");
+
+if(isset($_GET['archive'])) {
+    $zip = new ZipArchive();
+    $filename = 'Shops_' . date("m-d-Y_h-i-a") . '.zip';
+    if ($zip->open($filename, ZIPARCHIVE::CREATE) !== TRUE) {
+        die ("Could not open archive");
+    }
+
+    $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($config['path']));
+    foreach ($iterator as $key => $value) {
+        $zip->addFile(realpath($key), $key) or die ("ERROR: Could not add file: $key");
+    }
+    
+    $zip->close();
+    $common->download($filename);
+    @unlink($filename);
+    exit;
+}
+
+?>
+<h4>Welcome</h4>
+
+You are currently using LocalSuite v<?php echo $config['version']; ?>.<br /><br />
+Download all shops as a <a href="?archive">.zip archive</a>?<br /><br />
+
+<h4>Edit a shop file</h4>
+<form method="post" action="editor.php">
+    <label for="edit">Shop Name:</label> <br />
+    <select name="edit">
+        <option value="" selected>Select a shop</option>
+<?php
+$shop = new Shop();
+$shop = $shop->getShops();
+if(is_array($shop) && count($shop) > 0){
+    foreach($shop as $data => $file) {
+?>
+        <option value="<?php echo $data; ?>"><?php echo $data; ?></option>
+<?php 
+    }
+} else {
+?>
+        <option value="">No shops available</option>
+<?php
+}
+?>
+    </select> 
+    <input type="Submit" value="Edit Shop">
+</form>
+<?php
+
+include($config['template_path'] . $config['template'] . "/footer.php");

@@ -5,8 +5,6 @@
 4 Cobblestone
 5 Wooden Plank
 6 Sapling
-6:1 Redwood Sapling
-6:2 Birch Sapling
 7 Bedrock
 8 Water
 9 Stationary Water
@@ -31,9 +29,6 @@
 24 Sandstone
 25 Note Block
 26 Bed Block
-27 Powered Rail
-28 Detector Rail
-30 Web
 35 White Wool
 35:1 Orange Wool
 35:2 Magenta Wool
@@ -85,7 +80,7 @@
 63 Sign Post
 64 Wooden Door
 65 Ladder
-66 Rails
+66 Minecart Tracks
 67 Cobblestone Stairs
 68 Wall Sign
 69 Lever
@@ -114,7 +109,6 @@
 92 Cake Block
 93 Redstone Repeater Block (off)
 94 Redstone Repeater Block (on)
-95 Locked Chest
 256 Iron Shovel
 257 Iron Pickaxe
 258 Iron Axe
@@ -214,7 +208,7 @@
 351 Ink Sack
 351:1 Rose Red
 351:2 Cactus Green
-351:3 Coco Beans
+351:3 Cocoa Beans
 351:4 Lapis Lazuli
 351:5 Purple Dye
 351:6 Cyan Dye
@@ -232,6 +226,5 @@
 354 Cake
 355 Bed
 356 Redstone Repeater
-357 Cookie
 2256 Gold Music Disc
 2257 Green Music Disc

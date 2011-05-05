@@ -22,11 +22,15 @@ $FileManager = new File();
 $items = new Items('inc/items.db');
 
 // Version
-$config['version'] = "0.1.1";
+$config['version'] = "0.1.2";
 
 // Strip those magic quotes
 if (get_magic_quotes_gpc()){
 	foreach ($_GET as &$a) $a = stripslashes($a);
 	foreach ($_POST as &$a) $a = stripslashes($a);
 	foreach ($_COOKIE as &$a) $a = stripslashes($a);
+}
+
+if(!file_exists($config['path'])) {
+    @mkdir($config['path'], 0755, true);
 }

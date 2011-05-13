@@ -64,14 +64,14 @@ endif;
     </div>
     
     <div class="col three">
-        <label for="name">Shop name:</label> <br /><input type="text" name="name" id="file"><br />
+        <label for="name">Shop Name:</label> <br /><input type="text" name="name" id="file"><br />
         <label for="owner">Shop Owner:</label> <br /><input type="text" name="owner" id="owner"><br />
-        <label for="managers">Shop Managers:</label> <br /><input type="text" name="managers" id="managers"><br />
+        <label for="managers">Shop Managers (name1, name2):</label> <br /><input type="text" name="managers" id="managers"><br />
     </div>
     
     <div class="col three">
-        <label for="position1">Shop Position 1:</label> <br /><input type="text" name="position1" id="position1"><br />
-        <label for="position2">Shop Position 2:</label> <br /><input type="text" name="position2" id="position2">
+        <label for="position1">Shop Position 1 (x, y, z):</label> <br /><input type="text" name="position1" id="position1"><br />
+        <label for="position2">Shop Position 2 (x, y, z):</label> <br /><input type="text" name="position2" id="position2">
     </div>
     
     <div class="clear"></div>

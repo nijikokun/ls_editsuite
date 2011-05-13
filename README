@@ -1,0 +1,32 @@
+/*
+ * LocalSuite
+ * 
+ * @author: Nijikokun <nijikokun@gmail.com>
+ * @author: iffa
+ * @copyright: Copyright (C) 2011
+ * @license: GNUv3 Affero License <http://www.gnu.org/licenses/agpl-3.0.html>
+ */
+ 
+LocalSuite is a PHP Front/Backend for LocalShops by Jonbas (Maintained by Cereal).
+Version 3.x is supported by LocalSuite.
+
+FEATURES
+---------
+Generate shops easily without commands
+Add items to the shop easily
+Upload, and Edit shops for the program to use
+Download Shops in an Archive for easy extraction / moving.
+
+COMING SOON / PLANNED
+----------------------
+Finish Edit Settings page.
+Fixing bugs that are found.
+
+INSTALLATION GUIDE
+-------------------
+1. Download the archived format of the source or an archive download from the Downloads Section.
+2. Extract the archive into your htdocs folder, or wherever your localhost / web files are kept.
+3. Open inc/config.php and edit if needed. (If you change the shops directory or what not.)
+4. Upload (If Needed)
+5. Navigate to the index page, and start having fun!
+6. Suggest features and report bugs!
